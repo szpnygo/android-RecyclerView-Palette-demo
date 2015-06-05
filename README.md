@@ -7,6 +7,8 @@ Sample code for [RecyclerView][1]
 
 Sample code for [Palette][2]
 
+![](https://github.com/szpnygo/android-RecyclerView-Palette-demo/blob/master/screen.png)
+
 #About Devloper
 
 Neo (http://blog.smemo.info) 
