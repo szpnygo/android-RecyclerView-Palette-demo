@@ -2,7 +2,9 @@ package info.smemo.fullrecyclerviewdemo;
 
 import android.content.Context;
 import android.graphics.drawable.BitmapDrawable;
+import android.support.annotation.NonNull;
 import android.support.v7.graphics.Palette;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -22,7 +24,7 @@ public class MyAdapter extends RecyclerView.Adapter {
     private Context context;
     private OnItemClickListener onClickListener;
 
-    public MyAdapter(Context context, ArrayList<ImageItem> imageItemArrayList) {
+    public MyAdapter(Context context,@NonNull ArrayList<ImageItem> imageItemArrayList) {
         this.imageItemArrayList = imageItemArrayList;
         this.context = context;
     }
@@ -89,6 +91,7 @@ public class MyAdapter extends RecyclerView.Adapter {
                         }
                     }
                 });
+
                 break;
             case ImageItem.RIGHT:
                 HolderRight right = (HolderRight) holder;
@@ -150,6 +153,7 @@ public class MyAdapter extends RecyclerView.Adapter {
             imageView = (ImageView) itemView.findViewById(R.id.image);
             textView = (TextView) itemView.findViewById(R.id.title);
             delete = (TextView) itemView.findViewById(R.id.delete);
+
         }
     }
 

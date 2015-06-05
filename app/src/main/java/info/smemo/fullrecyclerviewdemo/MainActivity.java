@@ -2,13 +2,13 @@ package info.smemo.fullrecyclerviewdemo;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.support.annotation.DrawableRes;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Toast;
 
 import java.util.ArrayList;
-
 
 public class MainActivity extends Activity {
 
@@ -39,6 +39,8 @@ public class MainActivity extends Activity {
         ImageItem item6=new ImageItem("test6",R.drawable.b6,ImageItem.RIGHT);
         ImageItem item7=new ImageItem("test7",R.drawable.b7,ImageItem.LEFT);
         ImageItem item8=new ImageItem("test8",R.drawable.b8,ImageItem.RIGHT);
+//        @DrawableRes int字段必须为DrawableRes
+//        ImageItem item10=new ImageItem("test9",11,ImageItem.LEFT);
 
         imageItemArrayList=new ArrayList<>();
         imageItemArrayList.add(item0);
@@ -72,4 +74,5 @@ public class MainActivity extends Activity {
 
 
     }
+
 }
